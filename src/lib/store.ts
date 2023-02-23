@@ -1,5 +1,6 @@
+"use client"
+
 import { create } from "zustand";
-import { devtools, persist } from "zustand/middleware";
 
 interface IColorStore {
   color: string;
