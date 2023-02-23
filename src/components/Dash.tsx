@@ -15,11 +15,24 @@ export function Dash() {
   }, [color]);
 
   return (
-    <div>
-      <h1>{cor}</h1>
-      <Link href="/">Home</Link>
+    <div className="mx-5 my-5">
+      <div className="flex justify-center rounded-lg">
+        <h2 className="text-lg bg-black text-white rounded-full px-3">
+          Dash Page
+        </h2>
+      </div>
+
+      <h2 className="text-lg bg-gray-600 text-white px-3">{cor}</h2>
+      <Link href="/" className="text-blue-500 text-sm">
+        Home
+      </Link>
       <br />
-      <button onClick={changeColor}>change</button>
+      <button
+        onClick={changeColor}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
+      >
+        change
+      </button>
     </div>
   );
 }
